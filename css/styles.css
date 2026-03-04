@@ -164,6 +164,7 @@ ul {
 
 /* Advateges section */
 .advantages-section {
+  padding: 16px 0;
   background-color: var(--color-brand-light);
 }
 
@@ -211,8 +212,22 @@ ul {
   text-transform: uppercase;
 }
 
+.traditions-text.limited {
+  max-width: 340px;
+}
+
 .traditions-section {
   padding-top: 96px;
+}
+
+.traditons-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
 }
 
 .traditions-title {
@@ -220,6 +235,16 @@ ul {
 }
 
 /* Formats section */
+.formats-list {
+  display: flex;
+}
+
+
+.format-card {
+  border: 1px solid lightgray;
+  /*remove*/
+  border-radius: 16px;
+}
 
 .format-title {
   font-size: 24px;
