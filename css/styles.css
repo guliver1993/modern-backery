@@ -34,7 +34,8 @@
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
   --color-brand-dark: #465929;
-  --color-brand-light: #819b57;
+  --color-brand-normal: #819b57;
+  --color-brand-light:#cfcfbc;
 }
 
 /* Base */
@@ -98,8 +99,8 @@ ul {
   color: var(--color-primary-light);
   font-weight: 600;
   line-height: 1.5;
-  background-color: var(--color-brand-light);
-  border: 2px solid var(--color-brand-light);
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -116,7 +117,7 @@ ul {
 }
 
 .link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 /* Header */
@@ -148,7 +149,7 @@ ul {
 /* Hero section */
 .hero-section {
   padding: 272px 0;
-  background-image: url('../images/hero-section-bg.jpg');
+  background-image: url("../images/hero-section-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -163,13 +164,13 @@ ul {
 }
 
 .hero-title .accent {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 /* Advateges section */
 .advantages-section {
   padding: 16px 0;
-  background-color: var(--color-brand-light);
+  background-color: var(--color-brand-normal);
 }
 
 .advantages-list {
@@ -196,19 +197,28 @@ ul {
 }
 
 /* Chef section*/
+.chefs-title {
+  margin-bottom: 80px;
+}
+
+.chefs-title::before {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brand-light);
+  content: '';
+}
+
 .chef-title {
   margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
 }
 
-.chefs-title {
-  margin-bottom: 80px;
-}
+
 
 /* Traditions section */
 .traditions-text .brand {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
   font-weight: 600;
 }
 
@@ -250,7 +260,14 @@ ul {
 }
 
 .format-card {
+  height: 444px ;
   padding: 24px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
   border: 1px solid lightgray;
   /*remove*/
   border-radius: 16px;
@@ -278,8 +295,11 @@ ul {
 
 /* Footer */
 .footer {
-  background-image: url(../images/footer-bg.png);
   background-color: var(--color-primary-dark);
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .address-link {
@@ -290,7 +310,7 @@ ul {
 }
 
 .address-link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 .address-copyright {
